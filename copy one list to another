@@ -1,0 +1,8 @@
+s = input ()
+d =""
+b=list(s)
+c =b.copy()
+print (c)
+for i in c:
+   d +=i
+print (d)
