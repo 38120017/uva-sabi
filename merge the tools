@@ -1,0 +1,16 @@
+ 
+s,k = input (),int(input())
+d = list(s)
+a = int(len(s)/k) 
+#rint (d,a,s,k)
+for i in range(a):
+    b = d[:k] 
+    #print (b)
+    del d[:k]
+    #print (d)
+    c =""
+    for i in b:
+       #c =""
+       if i not in c:
+           c+=i
+       print (c)
