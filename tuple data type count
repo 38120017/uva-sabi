@@ -1,0 +1,20 @@
+s = input().split()
+t = tuple (s) 
+di = {} 
+a= b= c = d= 0
+for i in t: 
+    if type(i)==int: 
+         a+=1
+    elif type (i)==float:
+         b+=1
+    elif type(i)==str:
+         c+=1
+    elif type(i)==bool:
+         d+=1
+    else:
+         continue 
+di['integer']=a
+di['float']=b
+di['string']=c
+di['Boolean']=d 
+print (di)
