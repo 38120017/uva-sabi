@@ -1,0 +1,14 @@
+s = input() 
+a = s.split(".") 
+b = a[1].split("@")  
+d = ""
+print("Name :",a[0])
+print ("Dep :",b[-1]) 
+for i in b[0]:
+    if i.isdigit():
+        d+=i
+if len(d)==2:
+   if int(d)<22:
+      print("20"+d)
+else: 
+   print (d)
