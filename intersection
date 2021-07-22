@@ -1,0 +1,18 @@
+s1 = input() 
+s2 = input() 
+MS1 = []
+MS2 = []
+for i in "aeiou":
+     if i not in s1:
+          MS1.append(i)
+     if i not in s2:
+          MS2.append(i)
+# = MS1.intersection(MS2)
+b = set(MS1)
+c = set(MS2)
+d = b.intersection(c) 
+CMS = list(d)
+CMS.sort()
+print (MS1)
+print (MS2)
+print ("[{0}]". format (",".join(map(str,CMS))))
